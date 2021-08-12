@@ -1,10 +1,15 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Lexend+Deca&display=swap');
-@media (min-width:1000px) {
-  body {
-    background-color: hsl(233, 47%, 7%);
-    font-size: 15px;
-    margin:0 auto;
-  }
+
+body {
+  background-color: hsl(233, 47%, 7%);
+  font-size: 15px;
+  margin:0 auto;
+}
+.container-lg {
+  background-color: hsl(244, 38%, 16%);
+  border-radius: 12px;
+}
+
   .vertical-align {
     min-height: 100%;
     min-height: 100vh;
@@ -12,35 +17,40 @@
     display: flex;
     align-items: center;
   }
-  .container-md {
-    background-color: hsl(244, 38%, 16%);
-    border-radius: 12px;
-  }
-  h1  {
-    color: hsl(0, 0%, 100%);
-    font-family:  'Inter', sans-serif;
-    font-weight: 700;
-  }
-  .col-md-4 > p {
 
-    color: hsla(0, 0%, 100%, 0.75);
-    font-family: 'Lexend Deca', sans-serif;
-  }
-  .col-md-6 > p {
-    font-family:  'Inter', sans-serif;
-    color: hsla(0, 0%, 100%, 0.6);
-  }
-  h3 {
-    color:hsl(0, 0%, 100%);
-    font-family: 'Lexend Deca', sans-serif;
-  }
-  div > img {
-    filter: invert(2%) sepia(4%) saturate(5003%) hue-rotate(244deg) brightness(60%) contrast(120%);}
-  img {
-    width: 100%;
-    border-radius: 0 12px 12px 0;
-  }
-  .col-md-6 {
+    h1  {
+      color: hsl(0, 0%, 100%);
+      font-family:  'Inter', sans-serif;
+      font-weight: 700;
+    }
+    .col-lg-4 > p {
+
+      color: hsla(0, 0%, 100%, 0.75);
+      font-family: 'Lexend Deca', sans-serif;
+    }
+    .col-lg-6 > p {
+      font-family:  'Inter', sans-serif;
+      color: hsla(0, 0%, 100%, 0.6);
+    }
+    h3 {
+      color:hsl(0, 0%, 100%);
+      font-family: 'Lexend Deca', sans-serif;
+    }
+    div > img {
+      filter: invert(2%) sepia(4%) saturate(5003%) hue-rotate(244deg) brightness(60%) contrast(120%);
+    }
+
+      img {
+        width: 100%;
+        border-radius: 0 12px 12px 0;
+      }
+@media (min-width:1000px) {
+
+
+
+
+
+  .col-lg-6 {
     padding-right:  0;
   }
 }
@@ -51,12 +61,12 @@
     font-weight: 700;
     padding-top: 20px;
   }
-  .col-md-4 > p {
+  .col-lg-4 > p {
 
     color: hsla(0, 0%, 100%, 0.75);
     font-family: 'Lexend Deca', sans-serif;
   }
-  .col-md-6 > p {
+  .col-lg-6 > p {
     font-family:  'Inter', sans-serif;
     color: hsla(0, 0%, 100%, 0.6);
   }
@@ -103,4 +113,9 @@
     width: 100%;
     border-radius: 12px 12px 0 0;
   }
+}
+@media (max-width:900px) {
+#text-area {
+  text-align: center;
+}
 }
